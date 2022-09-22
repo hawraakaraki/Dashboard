@@ -1,0 +1,112 @@
+/* Start Global Rules */
+:root {
+    --main-color : #A460ED ;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* end Global Rules */
+.page {
+background-color: #F1F5F9;
+min-height: 100vh;
+}
+/* start sidebar */
+.sidebar {
+    width: 210px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .logo::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 20px);
+    height: 2px;
+    background-color: white;
+    bottom: -20px;
+}
+.sidebar .logo i {
+    font-size: 24px;
+    color: white;
+    margin-right: 5px;
+}
+.sidebar .logo h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sidebar ul {
+    padding-top: 50px;
+}
+.sidebar ul li a {
+    position: relative;
+    width: calc(100% + 20px);
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    }
+.sidebar ul li a:hover::before , 
+.sidebar ul li a:hover::after ,
+.sidebar ul li a.active::before , 
+.sidebar ul li a.active::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    right: 0;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.sidebar ul li a:hover::before ,
+.sidebar ul li a.active::before {
+    top: -50px;
+    box-shadow: 35px 35px 0 10px #F1F5F9;
+}
+.sidebar ul li a:hover::after ,
+.sidebar ul li a.active::after {
+    bottom: -50px;
+    box-shadow: 35px -35px 0 10px #F1F5F9;
+}
+.sidebar ul li a:hover ,
+.sidebar ul li a.active {
+    background-color: #F1F5F9;
+    color: var(--main-color);
+}
+.sidebar ul li a i {
+    margin-right: 8px;
+}
+@media (max-width:768px ) {
+.sidebar {
+    width: 58px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hide-mobile {
+    display: none;
+}
+}
+/* end sidebar */

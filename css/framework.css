@@ -1,0 +1,33 @@
+/* start box */
+.d-flex {
+display: flex;
+}
+/* end box */
+/* start padding + margin  */
+.p-20 {
+    padding: 20px;
+}
+.m-20 {
+    margin: 20px;
+}
+/* end padding + margin  */
+/* start color*/
+.bg-purple {
+    background-color: #A460ED;
+}
+.c-purple {
+color: #A460ED;
+}
+.c-white {
+    color : white ;
+}
+/* end  color */
+/* start position */
+.relative {
+    position: relative;
+}
+.absolute {
+position: absolute;
+}
+/*end position */
+
