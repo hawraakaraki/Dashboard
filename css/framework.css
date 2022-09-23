@@ -2,6 +2,10 @@
 .d-flex {
 display: flex;
 }
+.align-items {
+    align-items: center;
+}
+
 /* end box */
 /* start padding + margin  */
 .p-20 {
@@ -10,10 +14,16 @@ display: flex;
 .m-20 {
     margin: 20px;
 }
+.p-15 {
+    padding: 15px;
+}
 /* end padding + margin  */
 /* start color*/
 .bg-purple {
     background-color: #A460ED;
+}
+.bg-white{
+    background-color: white;
 }
 .c-purple {
 color: #A460ED;
@@ -30,4 +40,24 @@ color: #A460ED;
 position: absolute;
 }
 /*end position */
+/* start width and height */
+.w-full {
+    width: 100%;
+}
+/*end width and height */
+/* start compounands */
+.space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+/* end compounands */
+/* start border  */
+.border-1 {
+border: 1px solid #ccc;
+}
+.br-10 {
+    border-radius: 10px;
+}
+/* end border  */
