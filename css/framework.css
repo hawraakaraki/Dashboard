@@ -5,31 +5,80 @@ display: flex;
 .align-items {
     align-items: center;
 }
-
+.d-grid {
+    display: grid;
+}
+.gap-20 {
+    gap: 20px;
+}
+@media (max-width : 768px) {
+    .block-mobile {
+        display: block;
+    }
+}
+.d-block{
+    display: block;
+}
 /* end box */
 /* start padding + margin  */
+.p-10 {
+    padding: 10px;
+}
+.p-15 {
+    padding: 15px;
+}
 .p-20 {
     padding: 20px;
+}
+.pt {
+    padding-top: 20px;
+}
+.pb {
+    padding-bottom: 20px;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mb-10 {
+    margin-bottom: 10px;
 }
 .m-20 {
     margin: 20px;
 }
-.p-15 {
-    padding: 15px;
+.mr-20 {
+    margin-right: 20px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mt-10 {
+    margin-top: 10px;
 }
 /* end padding + margin  */
 /* start color*/
 .bg-purple {
     background-color: #A460ED;
 }
+.bg-green {
+    background-color: #ADDDD0;
+}
 .bg-white{
     background-color: white;
+}
+.bg-eee {
+    background-color: #eee;
 }
 .c-purple {
 color: #A460ED;
 }
 .c-white {
     color : white ;
+}
+.c-grey {
+    color: #888;
 }
 /* end  color */
 /* start position */
@@ -48,10 +97,15 @@ position: absolute;
 /* start compounands */
 .space-between {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
 }
-
+.btn-shape {
+    padding: 4px 10px ;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
 /* end compounands */
 /* start border  */
 .border-1 {
@@ -60,4 +114,38 @@ border: 1px solid #ccc;
 .br-10 {
     border-radius: 10px;
 }
+.br-6 {
+    border-radius: 6px;
+}
+.br-none {
+    border: none;
+}
 /* end border  */
+/* start text  */
+.tt-c {
+    text-transform: capitalize ;
+}
+    @media (max-width : 768px) {
+    .txt-c-mobile {
+        text-align: center;  
+    }
+}
+.txt-c {
+    text-align: center;  
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fw-b {
+font-weight: bold ;
+}
+/*end text  */
+/* start width + height*/
+.w-fit {
+    width: fit-content;
+}
+
+/* end width  + height*/
