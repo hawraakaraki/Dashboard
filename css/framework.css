@@ -59,26 +59,26 @@ display: flex;
 }
 /* end padding + margin  */
 /* start color*/
-.bg-purple {
-    background-color: #A460ED;
+.bg-pink {
+    background-color: #FA9494;
 }
-.bg-green {
-    background-color: #ADDDD0;
+.bg-pink-alt {
+    background-color: #FA9494;
 }
 .bg-white{
     background-color: white;
 }
-.bg-eee {
-    background-color: #eee;
+.bg-grey {
+    background-color: #F1F5F9;
 }
-.c-purple {
-color: #A460ED;
+.c-pink {
+color: #FF87CA;
 }
 .c-white {
     color : white ;
 }
 .c-grey {
-    color: #888;
+    color: #A89CA0;
 }
 /* end  color */
 /* start position */

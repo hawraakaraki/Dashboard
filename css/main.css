@@ -1,9 +1,10 @@
 /* Start Global Rules */
 :root {
-    --purple-color : #A460ED ;
-    --grey-color : #888 ;
-    --red-color : #f44336 ;
-    --green-color: #ADDDD0 ;
+    --pink-color : #FA9494;
+    --pink-alt-color : #F5EDDC;
+    --grey-color : #F1F5F9 ;
+    --grey-alt-color: #A89CA0;
+   --beige-color : #EED7CE ;
 }
 * {
     box-sizing: border-box;
@@ -20,10 +21,10 @@
     background-color: white;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: var(--purple-color);
+    background-color: var(--pink-color);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--green-color);
+    background-color: var(--pink-alt-color);
 }
 body {
     font-family: 'Open Sans', sans-serif;
@@ -112,7 +113,7 @@ min-height: 100vh;
 .sidebar ul li a:hover ,
 .sidebar ul li a.active {
     background-color: #F1F5F9;
-    color: var(--purple-color);
+    color: var(--pink-color);
 }
 .sidebar ul li a i {
     margin-right: 8px;
@@ -146,7 +147,7 @@ z-index: 2;
     top: 50%;
     transform: translateY(-50%);
     left: 15px;
-    color: var(--grey-color);
+    color: var(--grey-alt-color);
 }
 .head .search input {
 margin-left: 5px;
@@ -159,10 +160,9 @@ font-size: 14px;
 }
 .head .search input:focus {
     width: 200px;
-    border: 1px solid var(--purple-color);
 }
 .head .search input::placeholder {
-    color: var(--purple-color);
+    color: var(--grey-alt-color);
 }
 .head .search input:focus::placeholder {
     opacity: 0;
@@ -171,7 +171,7 @@ font-size: 14px;
 content: "";
 width: 10px;
 height: 10px;
-background-color: var(--red-color);
+background-color: #f44336;
 position: absolute;
 border-radius: 50%;
 right: -5px;
@@ -221,6 +221,7 @@ width: 40px;
 }
 .welcome .intro {
    margin-bottom: 20px;
+   background-color: var(--pink-alt-color);
 }
 @media (max-width: 767px) {
     .welcome .intro {
@@ -262,7 +263,7 @@ transition: .3s;
 cursor: pointer;
 }
 .welcome .visit:hover {
-    background-color: var(--green-color);
+    background-color: var(--pink-alt-color);
 }
 /* End Welcome Widget */
 /* Start Quick Draft Widget */
@@ -276,6 +277,6 @@ transition: .3s;
 cursor: pointer;
 }
 .quick-draft .save:hover {
-    background-color: var(--green-color);
+    background-color: var(--pink-alt-color);
 }
 /* End Quick Draft Widget */
