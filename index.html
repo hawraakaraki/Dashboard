@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/all.css">
- <link rel="stylesheet" href="css/main.css">
  <link rel="stylesheet" href="css/framework.css">
- <link rel="stylesheet" href="css/all.min.css">
  <link rel="stylesheet" href="css/normlize.css">
+ <link rel="stylesheet" href="css/main.css">
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -125,22 +125,22 @@
     <p class="c-grey mt-0 mb-20 fs-15 ">Targets of the year</p>
     <!-- 1 -->
     <div class="target-row mb-20 pink space-between ">
-<div class="icon align-center">
+<div class="icon center-flex">
     <i class=" fa-solid fa-dollar-sign fa-lg c-pink"></i>
 </div>
 <div class="details">
     <span class="fs-14 c-grey">Money</span>
     <span class=" d-block mt-5 mb-10 fw-b">$20,000</span>
     <div class="progress relative">
-<span class="bg-pink pink" style="width: 40%;">
-<span class="bg-pink c-white fs-14 br-6">40%</span>
+<span class="bg-pink pink" style="width: 100%;">
+<span class="bg-pink c-white fs-14 br-6">100%</span>
 </span>
     </div>
 </div>
     </div>
 <!-- 2 -->
 <div class="target-row mb-20 blue space-between ">
-    <div class="icon align-center">
+    <div class="icon center-flex">
         <i class=" fa-solid fa-dollar-sign fa-lg c-blue"></i>
     </div>
     <div class="details">
@@ -155,15 +155,15 @@
         </div>
 <!-- 3 -->
 <div class="target-row mb-20 orange space-between ">
-    <div class="icon align-center">
+    <div class="icon center-flex">
         <i class=" fa-solid fa-dollar-sign fa-lg c-orange"></i>
     </div>
     <div class="details">
         <span class="fs-14 c-grey">Team</span>
-        <span class=" d-block mt-5 mb-10 fw-b">15</span>
+        <span class=" d-block mt-5 mb-10 fw-b">60</span>
         <div class="progress relative">
-    <span class="bg-orange orange " style="width: 15%;">
-    <span class="bg-orange  c-white fs-14 br-6">15%</span>
+    <span class="bg-orange orange " style="width: 60%;">
+    <span class="bg-orange  c-white fs-14 br-6">60%</span>
     </span>
         </div>
     </div>
@@ -320,7 +320,7 @@
         <span class="d-block c-grey fs-14">hawraa</span>
     </span>
 </div>
-<div class="btn-shape bg-pink c-white button">17mb</div>
+<div class="btn-shape bg-pink c-white button fs-14">17mb</div>
         </li>
         <li class="space-between pb-10 pt-10 ">
             <div class="d-flex align-center">
@@ -375,9 +375,109 @@
     </ul>
 </div>
 <!-- End uplode  -->
+<!--start last project widget -->
+<div class="last-project bg-white relative p-20 br-10 tt-c ">
+    <h2 class="mt-0 mb-10">last project progress</h2>
+    <ul class="m-0 relative">
+        <li class="mt-25 d-flex align-center done">got the project</li>
+        <li class="mt-25 d-flex align-center done">started the project</li>
+        <li class="mt-25 d-flex align-center done">the project about to finish</li>
+        <li class="mt-25 d-flex align-center current">test the project </li>
+        <li class="mt-25 d-flex align-center ">finish the project & get money</li>
+    </ul>
+    <img class="icon hide-mobile" src="imgs/project.png" alt="">
+</div>
+<!--start last project widget -->
+<!-- start reminder widget -->
+<div class="reminder bg-white br-10 p-20 tt-c relative">
+    <h2 class="mt-0 mb-20">reminders</h2>
+    <ul class="m-0 ">
+        <li class="d-flex align-center mt-15">
+            <span class="key bg-pink mr-15 br-half"></span>
+            <div class="pink pl-15">
+                <p class="fs-14 fs-bold mt-0 mb-5">check last messages</p>
+                <span class="c-grey fs-13">28/07/2022 - 11:45am</span>
+            </div>
+        </li>
+
+        <li class="d-flex align-center mt-15">
+            <span class="key bg-blue mr-15 br-half"></span>
+            <div class="blue pl-15">
+                <p class="fs-14 fs-bold mt-0 mb-5">check last messages</p>
+                <span class="c-grey fs-13">28/07/2022 - 11:45am</span>
+            </div>
+        </li>
+        <li class="d-flex align-center mt-15">
+            <span class="key bg-orange mr-15 br-half"></span>
+            <div class="orange pl-15">
+                <p class="fs-14 fs-bold mt-0 mb-5">check last messages</p>
+                <span class="c-grey fs-13">28/07/2022 - 11:45am</span>
+            </div>
+        </li>
+        <li class="d-flex align-center mt-15">
+            <span class="key bg-red mr-15 br-half"></span>
+            <div class="red pl-15">
+                <p class="fs-14 fs-bold mt-0 mb-5">check last messages</p>
+                <span class="c-grey fs-13">28/07/2022 - 11:45am</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--end reminder widget -->
+<!--Start Lastet post Widget -->
+<div class="lastet-post bg-white p-20 tt-c relative br-10">
+    <h2 class="mt-0 mb-20">lastet post</h2>
+    <div class="top align-center d-flex">
+        <img class="avatar mr-15" src="imgs/avatar.png" alt="">
+        <div class="info">
+            <span class="d-block mb-5 fw-b">hawraa karaki</span>
+            <span class="c-grey">about 3 hours ago</span>
+        </div>
+    </div>
+    <div class="post-content txt-c-mobile pt-20 pb-20 mt-20 mb-20">
+        Being successful doesn't necessarily make you great.
+        what makes you great is when you reach back and help somebody else to become succesful.
+    </div>
+<div class="post-stats c-grey space-between">
+<div>
+    <i class="fa-regular fa-heart"></i>
+<span>1.8k</span>
+</div>
+<div>
+    <i class="fa-regular fa-comments"></i>
+<span>500</span>
+</div>
+</div>
+</div>
+<!--End Lastet post Widget -->
+<!-- start social media stats widget -->
+<!-- Start social media stats widget -->
+<div class="social-media br-10 bg-white p-20 tt-c">
+    <h2 class="mt-0 mb-20">Social Media Stats</h2>
+<div class="box twitter p-15 space-between relative mb-10">
+<i class="fa-brands fa-twitter fa-2x c-white h-full center-flex"></i>
+<span>10k followers</span>
+<a href="#" class="fs-14  c-white btn-shape">follow</a>
+</div>
+<div class="box facebook p-15 space-between relative mb-10">
+    <i class="fa-brands fa-facebook fa-2x c-white h-full center-flex"></i>
+    <span>2k likes</span>
+    <a href="#" class="fs-14  c-white btn-shape">follow</a>
+    </div>
+    <div class="box youtube p-15 space-between relative mb-10">
+        <i class="fa-brands fa-youtube fa-2x c-white h-full align-center center-flex"></i>
+        <span>1 millions</span>
+        <a href="#" class="fs-14 c-white btn-shape">follow</a>
+        </div>
+        <div class="box linkedin p-15 space-between relative mb-10">
+            <i class="fa-brands fa-linkedin fa-2x c-white h-full center-flex"></i>
+            <span>70 followers</span>
+            <a href="#" class="fs-14 c-white btn-shape">follow</a>
+            </div>
+</div>
+<!-- End socail media stats widget -->
 
 </div>
-
 </div>
 </div>
 </div>

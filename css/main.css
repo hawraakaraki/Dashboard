@@ -1,7 +1,7 @@
 /* Start Global Rules */
 :root {
     --pink-color : #FA9494;
-    --pink-alt-color : #F5EDDC;
+    --pink-alt-color : hwb(0 58% 2% / 0.803);
     --grey-color : #F1F5F9 ;
     --grey-alt-color: #A89CA0;
    --beige-color : #EED7CE ;
@@ -418,3 +418,129 @@ width: calc(50% - 10px);
     height: 40px;
 }
 /* end uplode  */
+/* start last project widget */
+.last-project ul::before { 
+    content: "";
+    position: absolute;
+    left: 11px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--pink-color);
+} 
+.last-project ul li::before { 
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid rgb(255, 255, 255);
+    outline: 2px solid var(--pink-color);
+    margin-right: 15px;
+    z-index: 1;
+}
+.last-project ul li.done::before { 
+    content: "";
+    background-color: var(--pink-color);
+ 
+}
+.last-project ul li.current::before { 
+    content: "";
+    animation: change-color 0.8s infinite alternate;
+
+}
+.last-project .icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    opacity: 0.3;
+}
+/* end last project widget */
+/* start reminder widget  */
+.reminder ul li .key {
+width: 15px;
+height: 15px;
+}
+.reminder ul li > .pink {
+    border-left: 2px solid var(--pink-color);
+}
+.reminder ul li > .blue {
+    border-left: 2px solid #51C4D3;
+}
+.reminder ul li > .orange {
+    border-left: 2px solid #fd9c00;
+}
+.reminder ul li > .red {
+    border-left: 2px solid #f44336 ;
+}
+/* end reminder widget  */
+/* Start Lastet post Widget */
+.lastet-post .avatar {
+width: 48px;
+height: 48px;
+}
+.lastet-post .post-content {
+    line-height: 1.8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    min-height: 140px;
+}
+/* End Lastet post Widget */
+/* start social media widget */
+.social-media .box {
+padding-left: 70px;
+}
+.social-media .box i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 52px;
+    transition: .3s;
+}
+.social-media .box i:hover {
+    transform: rotate(5deg);
+}
+.social-media .box.twitter {
+    background-color: rgb(28, 160, 242 , 20%) ;
+    color: #1da1f2;
+}
+.social-media .box.twitter i ,
+.social-media .box.twitter a {
+   background-color: #1da1f2;
+}
+.social-media .facebook {
+    background-color: rgb(24, 119, 242 , 40%);
+    color: #1877f2;
+}
+.social-media .box.facebook i ,
+.social-media .box.facebook a {
+   background-color: #1877f2;
+}
+.social-media .youtube {
+    background-color: rgb(255, 0, 0 , 20%) ;
+    color: #ff0000;
+}
+.social-media .box.youtube i ,
+.social-media .box.youtube a {
+   background-color: #ff0000;
+}
+.social-media .box.linkedin {
+    background-color: rgb(29, 161, 242 , 20%) ;
+    color: #51C4D3;
+}
+.social-media .box.linkedin i ,
+.social-media .box.linkedin a {
+   background-color: #51C4D3;
+}
+/* end social media widget */
+/* start animation */
+@keyframes change-color {
+    from {
+        background-color: var(--pink-color);
+    }
+    to {
+        background-color: white;
+    }
+}
+/* end  animation */
