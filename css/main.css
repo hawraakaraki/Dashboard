@@ -534,6 +534,46 @@ padding-left: 70px;
    background-color: #51C4D3;
 }
 /* end social media widget */
+/* start projects table */
+.projects .responsive-table{
+overflow-x: auto;
+}
+.projects table {
+    min-width: 1000px;
+    border-spacing: 0;
+}
+.projects table thead td {
+    background-color: #eee;
+    font-weight: bold;
+}
+.projects table td {
+    padding: 20px;
+}
+.projects  tbody td {
+    border-bottom: 1px solid #eee;
+}
+.projects  tbody tr:hover td {
+    transition: .3s;
+    background-color: var(--grey-color);
+} 
+.projects table img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+}
+.projects table img:not(:first-child) {
+    margin-left : -20px
+}
+.projects table tr td:last-child {
+border-right: 1px solid #eee;
+}
+.projects table td .lable {
+    font-size: 14px;
+}
+/* end projects table */
+
 /* start animation */
 @keyframes change-color {
     from {
