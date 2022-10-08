@@ -573,7 +573,128 @@ border-right: 1px solid #eee;
     font-size: 14px;
 }
 /* end projects table */
+/* start settings */
+.settings-page {
+grid-template-columns: repeat(auto-fill, minmax(500px , 1fr));
+}
+@media (max-width : 767px) {
+    .settings-page {
+    grid-template-columns: minmax(100px , 1fr);
+    gap: 10;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+}
+.settings-page .email {
+    display: inline-flex;
+    width: calc(100% - 70px);
+}
+.settings-page .close-message  {
+    min-height: 150px ;
+    border: 1px solid #eee;
+    resize: none;
+}
+.settings-page a.button {
+padding: 14px 10px;
+}
+.settings-page :disabled {
+    cursor: no-drop;
+    color: #bbb;
+    background-color: #f0f4f6;
+}
+.settings-page a.button:hover {
+    background-color: var(--pink-alt-color);
+}
+.settings-page .social-boxes i {
+width: 40px;
+height: 40px;
+border-radius: 6px 0 0 6px;
+background-color: #f6f6f6;
+border: 1px solid #eee;
+border-right: none;
+transition: 0.3s;
+}
+.settings-page .social-boxes input {
+height: 40px ;
+padding-left: 10px;
+background-color: #f6f6f6;
+border: 1px solid #eee;
+border-radius: 0 6px 6px 0;
+}
+.settings-page .social-boxes > div:focus-within i{
+    color: grey;
+}
+.settings-page .Widgets-Control .control label {
+    padding-left: 10px;
+    cursor: pointer;
+}
+.settings-page .Backup-control  .control label {
+    padding-left: 10px;
+    cursor: pointer;
+}
+.Backup-control .servers input {
+    appearance: none;
+--webkit-appearance: none;
+}
+.Backup-control .servers {
+border-top : 1px solid #eee ;
+padding-top : 20px;
 
+}
+@media (max-width: 767px) {
+    .Backup-control .servers {
+     flex-wrap: wrap;
+    }
+}
+.Backup-control .servers .server{
+    border: 1px solid #eee;
+    position: relative;
+}
+.Backup-control .servers input[type="radio"]:checked + .server {
+    border-color: var(--pink-color);
+    transition: .3s;
+    color: var(--pink-color);
+}
+.toggle-checkbox {
+    appearance: none;
+--webkit-appearance: none;
+}
+.toggle-switch {
+background-color: #ccc;
+width: 78px;
+height: 32px;
+border-radius: 15px;
+position: relative;
+cursor: pointer;
+transition: 0.3s;
+}
+.toggle-switch::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey-alt-color);
+    transition: .3s;
+}
+.toggle-checkbox:checked + .toggle-switch{
+ background-color: var(--pink-color);   
+}
+.toggle-checkbox:checked + .toggle-switch::before{
+    left: 50px;
+    color: var(--pink-color);
+    content: "\f00c";
+}
+
+/* end settings */
 /* start animation */
 @keyframes change-color {
     from {
