@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+ <link rel="stylesheet" href="css/framework.css">
+ <link rel="stylesheet" href="css/normlize.css">
+ <link rel="stylesheet" href="css/main.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="page d-flex ">
+    <!-- start sidebar -->
+    <div class="sidebar bg-pink  p-20 relative">
+        <div class="logo d-flex relative">
+            <i class="fa-solid fa-gauge"></i>
+            <h3 class="c-white hide-mobile">Dashboard</h3>
+        </div>
+        <ul >
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-chart-simple fa-fw"></i>
+                    <span class="hide-mobile">dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span class="hide-mobile">settings</span>
+                </a>
+            </li>
+            <li>
+                <a class="active"  href="profile.html">
+                    <i class="fa-solid fa-user fa-fw"></i>
+                    <span class="hide-mobile">profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="projects.html">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <span class="hide-mobile">projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="courses.html">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <span class="hide-mobile">courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="friends.html">
+                    <i class="fa-solid fa-user-friends fa-fw"></i>
+                    <span class="hide-mobile">friends</span>
+                </a>
+            </li>
+            <li>
+                <a href="files.html">
+                    <i class="fa-solid fa-file fa-fw"></i>
+                    <span class="hide-mobile">Files</span>
+                </a>
+            </li>
+            <li>
+                <a href="plan.html">
+                    <i class="fa-solid fa-credit-card fa-fw"></i>
+                    <span class="hide-mobile">plans</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- end sidebar -->
+    <div class="content w-full ">
+<!-- start head -->
+<div class="head bg-white p-15 space-between">
+    <div class="search relative">
+     <input class="p-20 br-10 border-ccc" type="search" placeholder="Type a Keyword">
+    </div>
+    <div class="icons align-center">
+<span class="notifications relative">
+    <i class="fa-regular fa-bell fa-lg"></i>
+</span>
+<img src="imgs/avatar.png" alt="">
+    </div>
+</div>
+<!-- end head -->
+<!-- start profile page -->
+<h1 class="relative">profile</h1>
+<div class="profile-page m-20 ">
+    <div class="overview bg-white tt-c br-10 d-flex align-center ">
+        <div class="avatar-box p-20 txt-c">
+            <img class="br-half mb-10 " src="imgs/avatar.png" alt="">
+            <h3 class="m-0 ">hawraa karaki</h3>
+            <p class="c-grey fs-14 mt-10 mb-10">level 10</p>
+            <div class="level br-6 bg-grey relative ">
+                <span style="width: 60%;"></span>
+            </div>
+            <div class="rate mt-10">
+                <i class="fa-solid fa-star c-orange fs-24"></i>
+                <i class="fa-solid fa-star c-orange fs-24"></i>
+                <i class="fa-solid fa-star c-orange fs-24"></i>
+                <i class="fa-solid fa-star c-orange fs-24"></i>
+                <i class="fa-solid fa-star c-orange fs-24"></i>
+            </div>
+            <p class="c-grey fs-14 m-0 mt-10 mb-20">520 rating</p>
+        </div>
+        <div class="info-box txt-c-mobile w-full">
+        <!-- 1 -->
+        <div class="box p-20 d-flex center-flex">
+        <h4 class="c-grey w-full m-0 fs-15">General Information</h4>
+        <div class="fs-14">
+            <span class="c-grey">full name:</span>
+            <span>hawraa karaki</span>
+        </div>
+        <div class="fs-14">
+            <span class="c-grey">gender:</span>
+            <span>female</span>
+        </div>
+        <div class="fs-14">
+            <span class="c-grey">country:</span>
+            <span>lebanon </span>
+        </div>
+        <div class="fs-14">
+            <label>
+                <input class="toggle-checkbox" type="checkbox" checked>
+                <div class="toggle-switch"></div>
+                </label>
+        </div>
+        </div>
+        <!-- 2 --> 
+            <div class="box p-20 d-flex center-flex">
+              <h4 class="c-grey w-full m-0 fs-15">Personal Information</h4>
+              <div class="fs-14">
+                <span class="c-grey">email:</span>
+                <span>hawraa@gmail.com</span>
+              </div>
+              <div class="fs-14">
+                <span class="c-grey">phone:</span>
+                <span>71668254</span>
+            </div>
+            <div class="fs-14">
+                <span class="c-grey">date of birth day</span>
+                <span>19/10/2005</span>
+            </div>
+            <div class="fs-14">
+                <label>
+                    <input class="toggle-checkbox" type="checkbox" checked>
+                    <div class="toggle-switch"></div>
+                    </label>
+            </div>
+        </div>
+        <!-- 3 -->
+            <div class="box p-20 d-flex center-flex">
+              <h4 class="c-grey w-full m-0 fs-15">Job Information</h4>
+              <div class="fs-14">
+                <span class="c-grey">title:</span>
+                <span>front-end developer</span>
+              </div>
+              <div class="fs-14">
+                <span class="c-grey">Programming Language:</span>
+                <span>c++</span>
+            </div>
+            <div class="fs-14">
+                <span class="c-grey">Years Of Experience::</span>
+                <span>2+</span>
+            </div>
+            <div class="fs-14">
+                <label>
+                    <input class="toggle-checkbox" type="checkbox" checked>
+                    <div class="toggle-switch"></div>
+                    </label>
+            </div>
+        </div>
+        <!-- 4 --> 
+        <div class="box p-20 d-flex center-flex">
+            <h4 class="c-grey w-full m-0 fs-15">Billing Information</h4>
+            <div class="fs-14">
+                <span class="c-grey">Payment Method:</span>
+                <span>Paypal</span>
+            </div>
+            <div class="fs-14">
+                <span class="c-grey">Email:</span>
+                <span> email@website.com</span>
+            </div>
+            <div class="fs-14">
+                <span class="c-grey">Subscription:</span>
+                <span> Monthly</span>
+            </div>
+            <div class="fs-14">
+                <label>
+                    <input class="toggle-checkbox" type="checkbox" checked>
+                    <div class="toggle-switch"></div>
+                    </label>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="other-data d-flex gap-20">
+        <div class="skills-card bg-white p-20 tt-c mt-20 br-10">
+            <h2 class="mt-0 mb-10">my skills</h2>
+            <p class="mt-0 mb-20 c-grey fs-14">Complete Skills List </p>
+            <ul class="m-0 txt-c-mobile">
+                <li><span>HTML</span><span>Pugjs</span><span>HAML</span></li>
+                <li><span>CSS</span><span>SASS</span><span>Stylus</span></li>
+                <li><span>JavaScript</span><span>TypeScript</span></li>
+                <li><span>Vuejs</span><span>Reactjs</span></li>
+                <li><span>Jest</span><span>Jasmine</span></li>
+                <li><span>PHP</span><span>Laravel</span></li>
+                <li><span>Python</span><span>Django</span></li>
+              </ul>
+        </div>
+        <div class="activities-card bg-white p-20 tt-c mt-20 br-10">
+            <h2 class="mt-0 mb-10">my activities</h2>
+            <p class="mt-0 mb-20 c-grey fs-14">Latest Activities Done By The User</p>
+            <!-- 1 -->
+            <div class="activity d-flex align-center txt-c-mobile">
+                <img src="imgs/activity-01.png" alt="">
+                <div class="info">
+                    <span class="d-block mb-10">store</span>
+                    <span class="c-grey">Bought The Mastering Python Course</span>
+                </div>
+                <div class="date">
+                    <span class="d-block mb-10">18:10</span>
+                    <span class="c-grey fs-14">Yesterday</span>
+                </div>
+            </div>
+  
+            <!--2 -->
+            <div class="activity  d-flex align-center txt-c-mobile">
+                <img src="imgs/activity-02.png" alt="">
+                <div class="info">
+                    <span class="d-block mb-10">academy</span>
+                    <span class="c-grey">Got The PHP Certificate</span>
+                </div>
+                <div class="date">
+                    <span class="d-block mb-10">5:10</span>
+                    <span class="c-grey fs-14">today</span>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="activity d-flex align-center txt-c-mobile">
+                <img src="imgs/activity-03.png" alt="">
+                <div class="info">
+                    <span class="d-block mb-10">badges</span>
+                    <span class="c-grey ">Unlocked The 10 Skills Badge</span>
+                </div>
+                <div class="date">
+                    <span class="d-block mb-10">04:50</span>
+                    <span class="c-grey fs-14">Yesterday</span>
+                </div>
+            </div>
+            <!--2 -->
+            <div class="activity  d-flex align-center txt-c-mobile">
+                <img src="imgs/activity-02.png" alt="">
+                <div class="info">
+                    <span class="d-block mb-10">courses</span>
+                    <span class="c-grey">your js  courses</span>
+                </div>
+                <div class="date">
+                    <span class="d-block mb-10">10:10</span>
+                    <span class="c-grey fs-14">yesterday</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+<!-- end profile page -->

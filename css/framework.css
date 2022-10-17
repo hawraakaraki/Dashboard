@@ -56,6 +56,9 @@ display: flex;
 .pb-20 {
     padding-bottom: 20px;
 }
+.mr-auto {
+    margin: auto;
+}
 .mt-0 {
     margin-top: 0;
 }
@@ -116,10 +119,10 @@ display: flex;
 /* end padding + margin  */
 /* start color*/
 .bg-pink {
-    background-color: #FA9494;
+    background-color: #FF74B1;
 }
 .bg-pink-alt {
-    background-color: #FA9494;
+    background-color: #F999B7;
 }
 .bg-white{
     background-color: white;
@@ -156,6 +159,9 @@ color: #FF87CA;
 }
 .c-green {
     color: rgb(10, 246, 10);
+}
+.c-red{
+    color: #f44336 ;
 }
 /* end  color */
 /* start position */
@@ -225,6 +231,9 @@ border: 1px solid #ccc;
 .txt-c {
     text-align: center;  
 }
+.txt-r {
+    text-align: right;  
+}
 .fs-13 {
     font-size: 13px;
 }
@@ -245,5 +254,10 @@ font-weight: bold ;
 .w-fit {
     width: fit-content;
 }
-
+.w-100 {
+    width: 100px;
+}
+.h-100 {
+    height: 100px;
+}
 /* end width  + height*/
